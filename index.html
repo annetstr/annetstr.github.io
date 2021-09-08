@@ -55,25 +55,25 @@
                             <label for="color-white">Белый</label>
                         </ul>
                         <ul><input type="checkbox" class="custom-checkbox" id="color-blue" value="Синий">
-                            <label for="color-blue">Синий</label>
+                            <label id="color-blue-label" for="color-blue">Синий</label>
                         </ul>
                         <ul><input type="checkbox" class="custom-checkbox" id="color-red" value="Красный">
-                            <label for="color-red">Красный</label>
+                            <label id="color-red-label" for="color-red">Красный</label>
                         </ul>
                         <ul><input type="checkbox" class="custom-checkbox" id="color-yellow" value="Желтый">
-                            <label for="color-yellow">Желтый</label>
+                            <label id="color-yellow-label" for="color-yellow">Желтый</label>
                         </ul>
                     </container>
                     <container>
                         <li id="ul_sec">Размер</li>
                         <ul><input type="checkbox" class="custom-checkbox" id="size-big" value="Большой">
-                            <label for="size-big">Большой</label>
+                            <label id="size-big-label" for="size-big">Большой</label>
                         </ul>
                         <ul><input type="checkbox" class="custom-checkbox" id="size-small" value="Маленький">
-                            <label for="size-small">Маленький</label>
+                            <label id="size-small-label" for="size-small">Маленький</label>
                         </ul>
                         <ul><input type="checkbox" class="custom-checkbox" id="size-average" value="Средний">
-                            <label for="size-average">Средний</label>
+                            <label id="size-average-label" for="size-average">Средний</label>
                         </ul>
                     </container>
                 </div>
@@ -181,8 +181,8 @@
             header h2 {
                 font-size: 24px;
                 color: #fff;
-                padding-left: 12px;
-                margin: 12px 0;
+                padding-left: 10px;
+                margin: 14px 0;
             }
 
             nav {
@@ -198,40 +198,98 @@
                 font-weight: bold;
                 font-size: 16px;
                 list-style-type: none;
-                padding: 16px;
+                padding: 11px;
 
             }
 
             nav ul {
-                margin-left: -12px;
+                margin-left: -21px;
                 margin-top: -16px;
-                font-size: 16px;
+                font-size: 18px;
+            }
+
+            input[type="checkbox"] {
+                margin-top: 13px;
+                margin-left: 8px;
+            }
+
+            #color-blue {
+                margin-top: 8px;
+                margin-left: 8px;
+            }
+
+            #color-blue-label {
+                margin-left: -4px;
+            }
+
+            #color-red,
+            #color-yellow {
+                margin-left: 8px;
+                margin-top: 7px;
+            }
+
+            #color-red-label,
+            #color-yellow-label {
+                margin-left: -4px;
+            }
+
+            label {
+                margin: -4px;
             }
 
             #ul_sec {
-                padding-top: 12px;
+                padding-top: 1px;
             }
 
             nav ul:last-child {
                 margin-bottom: 0px;
             }
 
+            #size-big {
+                margin-top: 13px;
+                margin-left: 7px;
+            }
+
+            #size-small {
+                margin-top: 7px;
+                margin-left: 7px;
+            }
+
+            #size-average {
+                margin-top: 7px;
+                margin-left: 8px;
+            }
+
+            #size-big-label {
+                margin-left: -3px;
+            }
+
+            #size-small-label {
+                margin-left: 7px;
+            }
+
+            #size-average-label {
+                margin-left: -4px;
+            }
+
             article {
                 grid-area: article;
-                padding-left: 12px;
+                /* padding-left: 12px; */
                 background-color: rgba(180, 0, 180, 0.1);
             }
 
             h1 {
                 font-size: 32px;
                 margin-top: 12px;
-                margin-bottom: 12px;
+                margin-bottom: 4px;
+                padding-left: 12px;
             }
 
             article p {
                 font-size: 16px;
-                margin-top: 12px;
-                margin-bottom: 12px;
+                margin-top: 5px;
+                margin-bottom: 14px;
+                padding-left: 10px;
             }
 
             section {
@@ -242,21 +300,23 @@
             }
 
             .toys {
-                padding-top: 12px;
-                padding-left: 12px;
+                padding-top: 14px;
                 background-color: rgba(0, 0, 0, 0.05);
             }
 
             .toys a {
                 font-size: 16px;
+                padding-left: 11px;
             }
 
             .toys p {
                 margin-top: 0px;
-                margin-bottom: 12px;
+                margin-bottom: 14px;
                 font-size: 16px;
                 color: #666;
+                padding-left: 11px;
             }
+
 
             #popular_toys {
                 grid-area: popular_toys;
@@ -265,7 +325,8 @@
 
             #popular_toys h2 {
                 font-size: 24px;
-                margin: 12px 0;
+                margin: 14px 11px;
+                margin-top: 13px;
                 align-self: center;
             }
 
@@ -324,6 +385,12 @@
             }
 
             footer p {
+                color: #666;
+                font-size: 16px;
+                margin: auto -1px;
+            }
+
+            footer p:last-child {
                 color: #666;
                 font-size: 16px;
                 margin: auto 0;
